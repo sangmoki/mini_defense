@@ -896,6 +896,7 @@ GameObject:
   - component: {fileID: 810717390}
   - component: {fileID: 810717389}
   - component: {fileID: 810717388}
+  - component: {fileID: 810717391}
   m_Layer: 5
   m_Name: Unit3Btn
   m_TagString: Untagged
@@ -967,7 +968,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 810717389}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 810717391}
+        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+        m_MethodName: ClickUnitSpawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &810717389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,6 +1019,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810717386}
   m_CullTransparentMesh: 1
+--- !u!114 &810717391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810717386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c701d00121b704eaed3439d3a6993e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitNumber: 3
+  UnitObjects:
+  - {fileID: 11400000, guid: 20fb3c703520a4045a34a826a5bf4624, type: 2}
+  - {fileID: 11400000, guid: 3eb70c9fb7c81ab4bb677f0d31c43e78, type: 2}
+  - {fileID: 11400000, guid: 7fcefedc1d6d68943a16db380549efdb, type: 2}
+  - {fileID: 11400000, guid: bc1d7a7f3e959d74d80141b5d4b4781c, type: 2}
+  - {fileID: 11400000, guid: 6156cfb97543a1b45a0dff44aac53299, type: 2}
+  SpawnPoint: {fileID: 1238344861}
 --- !u!1 &814147950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1051,7 @@ GameObject:
   - component: {fileID: 814147954}
   - component: {fileID: 814147953}
   - component: {fileID: 814147952}
+  - component: {fileID: 814147955}
   m_Layer: 5
   m_Name: Unit5Btn
   m_TagString: Untagged
@@ -1089,7 +1123,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 814147953}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 814147955}
+        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+        m_MethodName: ClickUnitSpawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &814147953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,6 +1174,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814147950}
   m_CullTransparentMesh: 1
+--- !u!114 &814147955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814147950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c701d00121b704eaed3439d3a6993e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitNumber: 5
+  UnitObjects:
+  - {fileID: 11400000, guid: 20fb3c703520a4045a34a826a5bf4624, type: 2}
+  - {fileID: 11400000, guid: 3eb70c9fb7c81ab4bb677f0d31c43e78, type: 2}
+  - {fileID: 11400000, guid: 7fcefedc1d6d68943a16db380549efdb, type: 2}
+  - {fileID: 11400000, guid: bc1d7a7f3e959d74d80141b5d4b4781c, type: 2}
+  - {fileID: 11400000, guid: 6156cfb97543a1b45a0dff44aac53299, type: 2}
+  SpawnPoint: {fileID: 1238344861}
 --- !u!1 &842446179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1243,7 @@ GameObject:
   - component: {fileID: 871218930}
   - component: {fileID: 871218929}
   - component: {fileID: 871218928}
+  - component: {fileID: 871218931}
   m_Layer: 5
   m_Name: Unit1Btn
   m_TagString: Untagged
@@ -1248,7 +1315,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 871218929}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 871218931}
+        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+        m_MethodName: ClickUnitSpawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &871218929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1287,6 +1366,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871218926}
   m_CullTransparentMesh: 1
+--- !u!114 &871218931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871218926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c701d00121b704eaed3439d3a6993e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitNumber: 1
+  UnitObjects:
+  - {fileID: 11400000, guid: 20fb3c703520a4045a34a826a5bf4624, type: 2}
+  - {fileID: 11400000, guid: 3eb70c9fb7c81ab4bb677f0d31c43e78, type: 2}
+  - {fileID: 11400000, guid: 7fcefedc1d6d68943a16db380549efdb, type: 2}
+  - {fileID: 11400000, guid: bc1d7a7f3e959d74d80141b5d4b4781c, type: 2}
+  - {fileID: 11400000, guid: 6156cfb97543a1b45a0dff44aac53299, type: 2}
+  SpawnPoint: {fileID: 1238344861}
 --- !u!1 &935573318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1782,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -45}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1238344860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1238344861}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1238344861
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238344860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1316765746}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.3, y: -1}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1278001982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1977,7 +2111,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 120, y: 120, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1238344861}
   m_Father: {fileID: 1945117910}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2086,6 +2221,7 @@ GameObject:
   - component: {fileID: 1383554312}
   - component: {fileID: 1383554311}
   - component: {fileID: 1383554310}
+  - component: {fileID: 1383554313}
   m_Layer: 5
   m_Name: Unit2Btn
   m_TagString: Untagged
@@ -2157,7 +2293,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1383554311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1383554313}
+        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+        m_MethodName: ClickUnitSpawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1383554311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2196,6 +2344,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383554308}
   m_CullTransparentMesh: 1
+--- !u!114 &1383554313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383554308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c701d00121b704eaed3439d3a6993e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitNumber: 2
+  UnitObjects:
+  - {fileID: 11400000, guid: 20fb3c703520a4045a34a826a5bf4624, type: 2}
+  - {fileID: 11400000, guid: 3eb70c9fb7c81ab4bb677f0d31c43e78, type: 2}
+  - {fileID: 11400000, guid: 7fcefedc1d6d68943a16db380549efdb, type: 2}
+  - {fileID: 11400000, guid: bc1d7a7f3e959d74d80141b5d4b4781c, type: 2}
+  - {fileID: 11400000, guid: 6156cfb97543a1b45a0dff44aac53299, type: 2}
+  SpawnPoint: {fileID: 1238344861}
 --- !u!1 &1425654175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2898,6 +3066,7 @@ GameObject:
   - component: {fileID: 2082806773}
   - component: {fileID: 2082806772}
   - component: {fileID: 2082806771}
+  - component: {fileID: 2082806774}
   m_Layer: 5
   m_Name: Unit4Btn
   m_TagString: Untagged
@@ -2969,7 +3138,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2082806772}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2082806774}
+        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+        m_MethodName: ClickUnitSpawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2082806772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3008,6 +3189,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082806769}
   m_CullTransparentMesh: 1
+--- !u!114 &2082806774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082806769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c701d00121b704eaed3439d3a6993e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitNumber: 4
+  UnitObjects:
+  - {fileID: 11400000, guid: 20fb3c703520a4045a34a826a5bf4624, type: 2}
+  - {fileID: 11400000, guid: 3eb70c9fb7c81ab4bb677f0d31c43e78, type: 2}
+  - {fileID: 11400000, guid: 7fcefedc1d6d68943a16db380549efdb, type: 2}
+  - {fileID: 11400000, guid: bc1d7a7f3e959d74d80141b5d4b4781c, type: 2}
+  - {fileID: 11400000, guid: 6156cfb97543a1b45a0dff44aac53299, type: 2}
+  SpawnPoint: {fileID: 1238344861}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
