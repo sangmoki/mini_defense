@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UnitControl : MonoBehaviour
 {
+    private float speed = 1.5f;
     Animator animator;
 
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class UnitControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        animator.SetFloat("Status", 1f);
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        animator.SetFloat("Status", 0.5f);
     }
 }
