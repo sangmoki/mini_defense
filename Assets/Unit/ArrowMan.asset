@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitName: "\uAD81\uC218"
   UnitImage: {fileID: 4749904528282777558, guid: 4d701fb8bab94204e92af20e3e7b6a8a, type: 3}
-  UnitPrefab: {fileID: 0}
+  UnitPrefab: {fileID: 8603052162177401959, guid: fdc7295400fbde24ab482154637684a5, type: 3}
   UnitAttack: 35
   UnitHp: 80

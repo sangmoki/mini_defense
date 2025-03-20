@@ -758,7 +758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.15}
+  m_AnchoredPosition: {x: 0, y: 1.1500001}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587266605
@@ -3134,6 +3134,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CoinText: {fileID: 575743499}
+  CharBtns:
+  - {fileID: 871218928}
+  - {fileID: 1383554310}
+  - {fileID: 810717388}
+  - {fileID: 2082806771}
+  - {fileID: 814147952}
+  CoinImages:
+  - {fileID: 680129494}
+  - {fileID: 618648442}
+  - {fileID: 1786087280}
+  - {fileID: 1490891243}
+  - {fileID: 1928991595}
+  UnitImages:
+  - {fileID: 1278001984}
+  - {fileID: 1978668054}
+  - {fileID: 1284974508}
+  - {fileID: 1081493784}
+  - {fileID: 3402167}
 --- !u!4 &1893366508
 Transform:
   m_ObjectHideFlags: 0
@@ -3184,7 +3202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.15}
+  m_AnchoredPosition: {x: 0, y: 1.1500001}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925997544
