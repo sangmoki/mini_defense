@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1909863347626836154}
   - component: {fileID: 3229321497737119450}
   - component: {fileID: 8152005659505107130}
-  - component: {fileID: 8028286746894778083}
   - component: {fileID: 5450849614405966760}
+  - component: {fileID: 8028286746894778083}
   m_Layer: 0
   m_Name: BS Idle
   m_TagString: Untagged
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.5}
@@ -160,6 +160,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5450849614405966760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261239588952320138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d71a3a6f4cbe942b2756e98e0df481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitObject: {fileID: 11400000, guid: 20fb3c703520a4045a34a826a5bf4624, type: 2}
 --- !u!95 &8028286746894778083
 Animator:
   serializedVersion: 5
@@ -181,15 +194,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5450849614405966760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2261239588952320138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d71a3a6f4cbe942b2756e98e0df481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
