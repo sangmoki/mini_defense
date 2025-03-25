@@ -43,7 +43,7 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: EnemyStatus
     m_StateMachine: {fileID: 6948359003845982150}
     m_Mask: {fileID: 0}
     m_Motions: []
@@ -92,11 +92,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: EnemyStatus
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -3512196127092471404}
-    m_Position: {x: 290, y: 120, z: 0}
+    m_Position: {x: 300, y: 100, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

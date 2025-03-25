@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b27b9777ebc2584280e9df7f6a4ae66, type: 3}
   m_Name: EArrowMan
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 0}
+  EnemyPrefab: {fileID: 7962371503864011247, guid: d54de6330755d5e41985fcee62a1b8ad, type: 3}
   EnemyAttack: 35

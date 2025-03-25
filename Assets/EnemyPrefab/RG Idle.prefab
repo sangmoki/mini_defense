@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8505182578538803757}
   - component: {fileID: 4408107148221111863}
   - component: {fileID: 2916674983088498505}
+  - component: {fileID: -5180879424859533583}
   m_Layer: 0
   m_Name: RG Idle
   m_TagString: Untagged
@@ -180,3 +181,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-5180879424859533583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953767828076548310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962641cf75073204e965d01b7200c4b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyObject: {fileID: 11400000, guid: ce6ec6a3acefcce4bb23f09f2ef59fa9, type: 2}

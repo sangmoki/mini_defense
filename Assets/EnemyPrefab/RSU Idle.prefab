@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6620719792992537942}
   - component: {fileID: 5936361998634958747}
   - component: {fileID: 5573596257770851780}
+  - component: {fileID: -1442238860449108197}
   m_Layer: 0
   m_Name: RSU Idle
   m_TagString: Untagged
@@ -180,3 +181,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1442238860449108197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3633058643466271435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962641cf75073204e965d01b7200c4b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyObject: {fileID: 11400000, guid: cdc9b0fec5b0c7942a266720f0edbc75, type: 2}

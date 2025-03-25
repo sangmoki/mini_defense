@@ -359,6 +359,92 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &67455883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67455884}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &67455884
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67455883}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1589079735}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.3, y: -1}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &203814427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 203814429}
+  - component: {fileID: 203814428}
+  m_Layer: 0
+  m_Name: EnemySpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &203814428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203814427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07581626268782b488fe8033f0906404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyObjects:
+  - {fileID: 11400000, guid: 826b6185b4856fa4ca1d58d18b7ea95b, type: 2}
+  - {fileID: 11400000, guid: 3a74b7d382edf694cb98db0a19ad748e, type: 2}
+  - {fileID: 11400000, guid: ce6ec6a3acefcce4bb23f09f2ef59fa9, type: 2}
+  - {fileID: 11400000, guid: 2c238445b5838cd47ac26ec41dd101dd, type: 2}
+  - {fileID: 11400000, guid: cdc9b0fec5b0c7942a266720f0edbc75, type: 2}
+  SpawnPoint: {fileID: 67455884}
+--- !u!4 &203814429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203814427}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19602203, y: 0.41549405, z: -0.0015727148}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &217411103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,6 +2563,7 @@ GameObject:
   - component: {fileID: 1316765747}
   - component: {fileID: 1316765749}
   - component: {fileID: 1316765748}
+  - component: {fileID: 1316765750}
   m_Layer: 0
   m_Name: Base Blue
   m_TagString: BaseBlue
@@ -2629,6 +2716,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1316765750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316765745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5298b2d76a6894541be0967e09cd3712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HpGauge: {fileID: 1948582628}
 --- !u!1 &1358961214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,6 +3067,7 @@ RectTransform:
   m_LocalScale: {x: 120, y: 120, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 67455884}
   - {fileID: 587266604}
   m_Father: {fileID: 1945117910}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3978,3 +4079,4 @@ SceneRoots:
   - {fileID: 1945117910}
   - {fileID: 935573321}
   - {fileID: 1893366508}
+  - {fileID: 203814429}

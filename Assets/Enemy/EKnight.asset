@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b27b9777ebc2584280e9df7f6a4ae66, type: 3}
   m_Name: EKnight
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 0}
+  EnemyPrefab: {fileID: 3633058643466271435, guid: 969ce765b6c480b41b16ef23c30aee46, type: 3}
   EnemyAttack: 40

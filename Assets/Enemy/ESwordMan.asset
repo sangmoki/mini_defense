@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b27b9777ebc2584280e9df7f6a4ae66, type: 3}
   m_Name: ESwordMan
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 0}
+  EnemyPrefab: {fileID: 6211335196457743820, guid: 4c5ad2b513152244db7f15d77dacc220, type: 3}
   EnemyAttack: 25
