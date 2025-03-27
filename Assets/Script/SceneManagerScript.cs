@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerScript : MonoBehaviour
 {
+    GameObject BlackPanel, GameOverPanel;
+
     void Start()
     {
-        
+        BlackPanel = GameObject.Find("BlackPanel");
+        GameOverPanel = GameObject.Find("GameOverPanel");
     }
 
     public void OnClickStageSelect()
@@ -21,5 +24,13 @@ public class SceneManagerScript : MonoBehaviour
 
         PlayerPrefs.GetInt("StageNumber", 1);
         PlayerPrefs.Save();
+    }
+
+    public void OnClickGameOverPanelOff()
+    {
+        BlackPanel.SetActive(false);
+        GameOverPanel.SetActive(false);
+
+        SceneManager.LoadScene("UserScene");
     }
 }

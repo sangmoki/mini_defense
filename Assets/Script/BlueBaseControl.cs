@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class BlueBaseControl : MonoBehaviour
 {
+    [SerializeField] GameObject BlackPanel;
+    [SerializeField] GameObject GameOverPanel;
+    [SerializeField] Text GameOverText;
     [SerializeField] Image HpGauge;
 
     [HideInInspector] public static BlueBaseControl Instance;
@@ -13,6 +16,8 @@ public class BlueBaseControl : MonoBehaviour
     float MaxBaseHp = 3000f;
     // 성 현재 체력
     float CurrentBaseHp = 0;
+    int RewardCoin = 300;
+    int CurrentCoin = 0;
 
     private void Awake()
     {
@@ -36,5 +41,18 @@ public class BlueBaseControl : MonoBehaviour
     public void TakeDamage(float Damage)
     {
         CurrentBaseHp -= Damage;
+
+        if (CurrentBaseHp <= 0)
+        {
+            BlackPanel.SetActive(true);
+            GameOverPanel.SetActive(true);
+            GameOverText.text = "게임에서 패배하셨습니다.";
+
+            CurrentCoin = PlayerPrefs.GetInt("Coin");
+            PlayerPrefs.SetInt("Coin", CurrentCoin + RewardCoin);
+            PlayerPrefs.Save();
+
+            Time.timeScale = 0;
+        }
     }
 }

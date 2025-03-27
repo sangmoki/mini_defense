@@ -42,11 +42,11 @@ public class UnitControl : MonoBehaviour
         if (collision.gameObject.tag == "BaseRed")
         {
             isCollision = true;
-            StartCoroutine(UnitBaseAttack());
+            StartCoroutine(UnitBaseAttackCoroutine());
         }
     }
 
-    IEnumerator UnitBaseAttack()
+    IEnumerator UnitBaseAttackCoroutine()
     {
         while (true)
         {

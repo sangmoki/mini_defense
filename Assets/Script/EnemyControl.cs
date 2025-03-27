@@ -39,10 +39,14 @@ public class EnemyControl : MonoBehaviour
 
     IEnumerator EnemyBaseAttackCoroutine()
     {
-        animator.SetFloat("EnemyStatus", 1f);
-        BlueBaseControl.Instance.TakeDamage(EnemyAttack);
-        yield return new WaitForSeconds(0.25f);
-        animator.SetFloat("EnemyStatus", 0.5f);
-        yield return new WaitForSeconds(1.5f);
+        while (true)
+        {
+            animator.SetFloat("EnemyStatus", 1f);
+            BlueBaseControl.Instance.TakeDamage(EnemyAttack);
+            yield return new WaitForSeconds(0.25f);
+
+            animator.SetFloat("EnemyStatus", 0.5f);
+            yield return new WaitForSeconds(1.5f);
+        }
     }
 }
