@@ -173,6 +173,7 @@ MonoBehaviour:
   - {fileID: 1191039295}
   - {fileID: 1618382870}
   - {fileID: 1575853408}
+  WinText: {fileID: 1164461401}
 --- !u!1 &290392305
 GameObject:
   m_ObjectHideFlags: 0

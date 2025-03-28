@@ -16,8 +16,10 @@ public class RedBaseControl : MonoBehaviour
     float MaxBaseHp = 3000f;
     // 성 현재 체력
     float CurrentBaseHp = 0;
+
     int RewardCoin = 300;
     int CurrentCoin = 0;
+    int WinCount = 0;
 
     private void Awake()
     {
@@ -49,7 +51,9 @@ public class RedBaseControl : MonoBehaviour
             GameOverText.text = "게임에서 승리하셨습니다.";
 
             CurrentCoin = PlayerPrefs.GetInt("Coin");
+            WinCount = PlayerPrefs.GetInt("WinCount");
             PlayerPrefs.SetInt("Coin", CurrentCoin + RewardCoin);
+            PlayerPrefs.SetInt("WinCount", WinCount + 1);
             PlayerPrefs.Save();
 
             Time.timeScale = 0;

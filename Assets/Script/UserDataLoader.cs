@@ -7,6 +7,7 @@ public class UserDataLoader : MonoBehaviour
 {
     [SerializeField] Text UserNickNameText;
     [SerializeField] Button[] CharBtns;
+    [SerializeField] Text WinText;
 
     int[] CharNum;
 
@@ -23,6 +24,7 @@ public class UserDataLoader : MonoBehaviour
     void Update()
     {
         UserNickNameText.text = PlayerPrefs.GetString("UserNickName");
+        WinText.text = "½Â¸® È½¼ö : " + PlayerPrefs.GetInt("WinCount").ToString();
 
         for (int i = 0; i < 5; i++)
         {
