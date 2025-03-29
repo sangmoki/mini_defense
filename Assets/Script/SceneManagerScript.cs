@@ -22,7 +22,15 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Stage1");
 
-        PlayerPrefs.GetInt("StageNumber", 1);
+        PlayerPrefs.SetInt("StageNumber", 1);
+        PlayerPrefs.Save();
+    }
+
+    public void OnClickStage2()
+    {
+        SceneManager.LoadScene("Stage2");
+
+        PlayerPrefs.SetInt("StageNumber", 2);
         PlayerPrefs.Save();
     }
 

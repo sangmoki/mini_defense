@@ -15,15 +15,31 @@ public class EnemySpawn : MonoBehaviour
 
     IEnumerator EnemySpawnCoroutine()
     {
-        while (true)
+        if (PlayerPrefs.GetInt("StageNumber") == 1)
         {
-            for (int i = 0; i < Random.Range(3, 5); i++)
+            while (true)
             {
-                int index = Random.Range(0, 3);
-                GameObject enemy = Instantiate(enemyObjects[index].EnemyPrefab, SpawnPoint.position, SpawnPoint.rotation);
-                yield return new WaitForSeconds(0.7f);
+                for (int i = 0; i < Random.Range(3, 5); i++)
+                {
+                    int index = Random.Range(0, 3);
+                    GameObject enemy = Instantiate(enemyObjects[index].EnemyPrefab, SpawnPoint.position, SpawnPoint.rotation);
+                    yield return new WaitForSeconds(0.7f);
+                }
+                yield return new WaitForSeconds(10f);
             }
-            yield return new WaitForSeconds(10f);
+        }
+        else if (PlayerPrefs.GetInt("StageNumber") == 2)
+        {
+            while (true)
+            {
+                for (int i = 0; i < Random.Range(3, 6); i++)
+                {
+                    int index = Random.Range(0, 5);
+                    GameObject enemy = Instantiate(enemyObjects[index].EnemyPrefab, SpawnPoint.position, SpawnPoint.rotation);
+                    yield return new WaitForSeconds(0.7f);
+                }
+                yield return new WaitForSeconds(10f);
+            }
         }
     }
 }

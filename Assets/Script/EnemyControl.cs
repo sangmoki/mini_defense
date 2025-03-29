@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,12 +12,25 @@ public class EnemyControl : MonoBehaviour
     private float EnemyAttack = 0;
 
     Animator animator;
-    
+
+    // 오브젝트가 생성 될 때 초기화 하는 함수
+    private void OnEnable()
+    {
+        EnemyAttack = 0;
+    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
 
-        EnemyAttack = enemyObject.EnemyAttack;
+        if (PlayerPrefs.GetInt("StageNumber") == 1)
+        {
+            EnemyAttack = enemyObject.EnemyAttack;
+        }
+        else if (PlayerPrefs.GetInt("StageNumber") == 2)
+        {
+            EnemyAttack = enemyObject.EnemyAttack + 10;
+        }
     }
 
     void FixedUpdate()
