@@ -14,13 +14,20 @@ public class UnitControl : MonoBehaviour
     // 유닛 공격력
     private float UnitAttack = 0;
 
+    private int Level = 0;
+
     Animator animator;
+
+    // 기본공격력 + (5 x (Level - 1))
+    // 상점에서 강화 시 Level이 1씩 증가
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        UnitAttack = unitObject.UnitAttack;
+
+        Level = PlayerPrefs.GetInt("Level");
+        UnitAttack = unitObject.UnitAttack + (5 * (Level- 1));
     }
 
     // Update is called once per frame
