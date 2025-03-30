@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerScript : MonoBehaviour
 {
-    GameObject BlackPanel, GameOverPanel;
+    GameObject BlackPanel, GameOverPanel, AlarmPanel;
 
     void Start()
     {
         BlackPanel = GameObject.Find("BlackPanel");
         GameOverPanel = GameObject.Find("GameOverPanel");
+        AlarmPanel = GameObject.Find("AlarmPanel");
     }
 
     public void OnClickStageSelect()
@@ -40,5 +41,10 @@ public class SceneManagerScript : MonoBehaviour
         GameOverPanel.SetActive(false);
 
         SceneManager.LoadScene("UserScene");
+    }
+
+    public void OnClickCloseAlarmPanel()
+    {
+        AlarmPanel.SetActive(false);
     }
 }
