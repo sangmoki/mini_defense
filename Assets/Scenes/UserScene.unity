@@ -1084,7 +1084,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 2143a120cbd85fd408fbfb02d8d75b35, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -1543,6 +1543,7 @@ GameObject:
   - component: {fileID: 1498387396}
   - component: {fileID: 1498387395}
   - component: {fileID: 1498387394}
+  - component: {fileID: 1498387397}
   m_Layer: 5
   m_Name: ShopBtn
   m_TagString: Untagged
@@ -1613,7 +1614,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1498387395}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1498387397}
+        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
+        m_MethodName: OnClickUserToShop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1498387395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1652,6 +1665,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498387392}
   m_CullTransparentMesh: 1
+--- !u!114 &1498387397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498387392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f96621d601d95e4381af6d93efc6a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1538177295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,7 +1764,7 @@ GameObject:
   - component: {fileID: 1555982354}
   - component: {fileID: 1555982353}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: NickNameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1785,7 +1810,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 2143a120cbd85fd408fbfb02d8d75b35, type: 3}
     m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0

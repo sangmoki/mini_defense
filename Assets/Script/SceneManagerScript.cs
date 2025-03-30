@@ -43,6 +43,16 @@ public class SceneManagerScript : MonoBehaviour
         SceneManager.LoadScene("UserScene");
     }
 
+    public void OnClickShopToUser()
+    {
+        SceneManager.LoadScene("UserScene");
+    }
+
+    public void OnClickUserToShop()
+    {
+        SceneManager.LoadScene("ShopScene");
+    }
+
     public void OnClickCloseAlarmPanel()
     {
         AlarmPanel.SetActive(false);
